@@ -590,6 +590,9 @@ a {
   .event-actions {
     grid-template-columns: 1fr 1fr;
   }
+  .calendar-dropdown {
+    grid-column: span 2;
+  }
 }
 
 /* Calendar Dropdown */
