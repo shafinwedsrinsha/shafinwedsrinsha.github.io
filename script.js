@@ -184,9 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================
-  // 5. SMOOTH SCROLLING FOR INTERNAL LINKS
+  // 5. SMOOTH SCROLLING & BOTTOM NAV SCROLLSPY
   // ==========================================
   const internalLinks = document.querySelectorAll('a[href^="#"]');
+  const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
   
   internalLinks.forEach(link => {
     link.addEventListener('click', function(e) {
@@ -207,9 +208,49 @@ document.addEventListener('DOMContentLoaded', () => {
           top: targetPosition,
           behavior: 'smooth'
         });
+
+        // Immediately highlight clicked bottom nav link
+        bottomNavItems.forEach(item => {
+          if (item.getAttribute('href') === targetId) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
       }
     });
   });
+
+  // IntersectionObserver to dynamically highlight bottom navigation links as user scrolls
+  const observerSections = [
+    document.getElementById('hero'),
+    document.getElementById('invitation'),
+    document.getElementById('schedule')
+  ].filter(el => el !== null);
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-30% 0px -30% 0px', // trigger when section occupies middle 40% of viewport
+    threshold: 0
+  };
+
+  const scrollspyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        bottomNavItems.forEach(item => {
+          const href = item.getAttribute('href');
+          if (href === `#${id}`) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, observerOptions);
+
+  observerSections.forEach(section => scrollspyObserver.observe(section));
 
 
   // ==========================================
