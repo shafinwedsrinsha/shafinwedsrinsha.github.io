@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="You are cordially invited to the wedding celebration of Shafin & Rinsha. Join us as we celebrate our love.">
+  
+  <!-- Open Graph / Facebook / iMessage -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shafin & Rinsha — Our Wedding Celebration">
+  <meta property="og:description" content="You are cordially invited to join us as we celebrate our love on September 23, 2026. RSVP, check schedule details, and get directions here.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200&h=630">
+  <meta property="og:url" content="https://shafinandamina.com">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Shafin & Rinsha — Our Wedding Celebration">
+  <meta property="twitter:description" content="You are cordially invited to join us as we celebrate our love on September 23, 2026. RSVP, check schedule details, and get directions here.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200&h=630">
+
+  <title>Shafin & Rinsha - Our Wedding Celebration</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">S & R</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+      </ul>
+      
+      <!-- Audio Toggle Container -->
+      <div class="audio-control-container">
+        <audio id="bg-audio" loop preload="auto">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button id="audio-toggle" aria-label="Toggle background music" class="audio-btn">
+          <span class="music-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span id="audio-status-text">PLAY MUSIC</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <div class="monogram">S & R</div>
+      <h1 class="couple-names">Shafin & Rinsha</h1>
+      <p class="wedding-intro">Are celebrating their Nikah</p>
+      <div class="wedding-date-hero">September 23, 2026</div>
+      
+      <!-- Live Countdown Timer -->
+      <div class="countdown-container" id="countdown" data-date="2026-09-23T12:30:00">
+        <div class="countdown-item">
+          <span class="count" id="days">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span class="count" id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="count" id="minutes">00</span>
+          <span class="label">Mins</span>
+        </div>
+        <div class="countdown-item">
+          <span class="count" id="seconds">00</span>
+          <span class="label">Secs</span>
+        </div>
+      </div>
+      
+      <a href="#schedule" class="cta-btn scroll-link">View Schedule</a>
+    </div>
+    
+    <div class="scroll-down-indicator">
+      <span>Scroll Down</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Event Schedule Section -->
+  <section class="schedule-section">
+    <div class="section-container">
+      <!-- Elegant Responsive Graphic Banner -->
+      <div class="schedule-image-container">
+        <img class="schedule-promo-image"
+             src="shafin_rinsha.jpeg" 
+             alt="Shafin & Rinsha"
+             loading="lazy"
+             width="800"
+             height="450">
+      </div>
+
+      <div id="schedule" class="section-header">
+        <span class="subtitle">The Details</span>
+        <h2 class="section-title">Event Schedule</h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="schedule-grid">
+        <!-- Card 1: Nikah Ceremony -->
+        <div class="schedule-card" data-event-title="Nikah Ceremony: Shafin & Rinsha" data-event-start="20260923T070000Z" data-event-end="20260923T083000Z" data-event-location="Grand Auditorium, Francis Road, Kozhikode, Kerala, India" data-event-description="Join us for the auspicious Nikah ceremony of Shafin Backer CN & Amina Rinsha PP.">
+          <div class="card-icon-container">
+            <!-- Ring/Nikah Icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="14" r="7" stroke-linecap="round"/>
+              <circle cx="12" cy="6" r="3" stroke-linecap="round"/>
+              <path d="M12 9v1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="event-name">The Nikah</h3>
+          <p class="event-time">12:30 PM</p>
+          <div class="divider"></div>
+          <div class="venue-info">
+            <h4 class="venue-name">Grand Auditorium</h4>
+            <p class="venue-address">Francis Road, Kozhikode, Kerala, India</p>
+          </div>
+          
+          <div class="event-actions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="map-btn map-directions-link">
+              <span>Directions</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            
+            <div class="calendar-dropdown">
+              <button class="calendar-toggle-btn" aria-haspopup="true" aria-expanded="false">
+                <span>Add to Calendar</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="calendar-menu">
+                <a href="#" class="google-cal-btn" target="_blank" rel="noopener noreferrer">Google Calendar</a>
+                <a href="#" class="ics-cal-btn">iCal / Outlook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Ladies Gathering -->
+        <div class="schedule-card" data-event-title="Ladies Gathering (Nikah Reception): Shafin & Rinsha" data-event-start="20260923T083000Z" data-event-end="20260923T120000Z" data-event-location="Grand Auditorium, Francis Road, Kozhikode, Kerala, India" data-event-description="Join us for the special Ladies gathering and celebration of Shafin & Rinsha.">
+          <div class="card-icon-container">
+            <!-- Flower/Ladies Icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a4 4 0 00-4 4v12a4 4 0 008 0V6a4 4 0 00-4-4zM12 6a2 2 0 012 2v6a2 2 0 01-4 0V8a2 2 0 012-2z" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="1"/>
+            </svg>
+          </div>
+          <h3 class="event-name">Ladies Gathering</h3>
+          <p class="event-time">02:00 PM</p>
+          <div class="divider"></div>
+          <div class="venue-info">
+            <h4 class="venue-name">Grand Auditorium</h4>
+            <p class="venue-address">Francis Road, Kozhikode, Kerala, India</p>
+          </div>
+          
+          <div class="event-actions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="map-btn map-directions-link">
+              <span>Directions</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            
+            <div class="calendar-dropdown">
+              <button class="calendar-toggle-btn" aria-haspopup="true" aria-expanded="false">
+                <span>Add to Calendar</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="calendar-menu">
+                <a href="#" class="google-cal-btn" target="_blank" rel="noopener noreferrer">Google Calendar</a>
+                <a href="#" class="ics-cal-btn">iCal / Outlook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="wedding-footer">
+    <div class="monogram-footer">S & R</div>
+    <p class="hashtag">#ShafinAndAmina2026</p>
+    <p class="copyright">&copy; 2026 Shafin & Rinsha. All rights reserved.</p>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
