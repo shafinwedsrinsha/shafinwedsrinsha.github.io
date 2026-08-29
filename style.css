@@ -10,10 +10,10 @@
   --text-muted: #666666;
   --white-glass: rgba(255, 255, 255, 0.85);
   --border-color: rgba(197, 160, 89, 0.25);
-  
-  --font-serif: 'Playfair Display', Georgia, serif;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Montserrat', Helvetica, Arial, sans-serif;
-  
+
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -37,7 +37,10 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-serif);
   font-weight: 400;
 }
@@ -169,14 +172,30 @@ a {
   animation: bounce 0.8s ease infinite alternate;
 }
 
-.music-wave.playing span:nth-child(1) { animation-delay: 0.1s; }
-.music-wave.playing span:nth-child(2) { animation-delay: 0.3s; }
-.music-wave.playing span:nth-child(3) { animation-delay: 0.6s; }
-.music-wave.playing span:nth-child(4) { animation-delay: 0.2s; }
+.music-wave.playing span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.music-wave.playing span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.music-wave.playing span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.music-wave.playing span:nth-child(4) {
+  animation-delay: 0.2s;
+}
 
 @keyframes bounce {
-  0% { height: 3px; }
-  100% { height: 14px; }
+  0% {
+    height: 3px;
+  }
+
+  100% {
+    height: 14px;
+  }
 }
 
 /* Hero Section */
@@ -339,6 +358,7 @@ a {
     align-items: center;
     gap: 12px;
   }
+
   .hero-actions .cta-btn {
     width: 100%;
     max-width: 260px;
@@ -396,7 +416,8 @@ a {
   position: relative;
 }
 
-.accent-line::before, .accent-line::after {
+.accent-line::before,
+.accent-line::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -407,8 +428,13 @@ a {
   background-color: var(--primary-gold);
 }
 
-.accent-line::before { left: -10px; }
-.accent-line::after { right: -10px; }
+.accent-line::before {
+  left: -10px;
+}
+
+.accent-line::after {
+  right: -10px;
+}
 
 /* Event Schedule Section */
 .schedule-section {
@@ -590,6 +616,7 @@ a {
   .event-actions {
     grid-template-columns: 1fr 1fr;
   }
+
   .calendar-dropdown {
     grid-column: span 2;
   }
@@ -771,11 +798,11 @@ a {
   transition: var(--transition-smooth);
 }
 
-.attendance-radio:hover input ~ .custom-radio {
+.attendance-radio:hover input~.custom-radio {
   border-color: var(--primary-gold);
 }
 
-.attendance-radio input:checked ~ .custom-radio {
+.attendance-radio input:checked~.custom-radio {
   background-color: var(--primary-gold);
   border-color: var(--primary-gold);
 }
@@ -793,7 +820,7 @@ a {
   background: white;
 }
 
-.attendance-radio input:checked ~ .custom-radio::after {
+.attendance-radio input:checked~.custom-radio::after {
   display: block;
 }
 
@@ -979,18 +1006,39 @@ a {
 
 /* Keyframes animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.92); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes floatDown {
-  0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 8px); }
+
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 8px);
+  }
 }
 
 /* Invitation Section Styling */
@@ -1012,7 +1060,7 @@ a {
 }
 
 .bismillah-calligraphy {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif);
   font-size: 2.2rem;
   color: var(--dark-gold);
   margin-bottom: 24px;
@@ -1113,17 +1161,17 @@ a {
   .invitation-card-details {
     padding: 40px 16px;
   }
-  
+
   .family-grid {
     flex-direction: column;
     gap: 10px;
     width: 100%;
   }
-  
+
   .and-separator {
     margin: 20px 0;
   }
-  
+
   .family-side {
     padding: 10px 0;
     width: 100%;
@@ -1154,7 +1202,7 @@ a {
     border-top: none;
     box-shadow: none;
   }
-  
+
   .nav-links {
     display: none !important;
   }
@@ -1219,7 +1267,8 @@ a {
   }
 
   #audio-status-text {
-    display: none; /* Hide play music text on mobile screen to save space, keeping icon and visualizer */
+    display: none;
+    /* Hide play music text on mobile screen to save space, keeping icon and visualizer */
   }
 
   .hero-section {
@@ -1258,6 +1307,7 @@ a {
   }
 
   .wedding-footer {
-    padding: 60px 24px 110px; /* Offset padding added inside black footer */
+    padding: 60px 24px 110px;
+    /* Offset padding added inside black footer */
   }
 }
